@@ -1,30 +1,21 @@
 
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import Avaleht from './Pages/Avaleht';
+import Courses from './Pages/Courses';
+import Hobbies from './Pages/Hobbies';
+import Work from './Pages/Work';
 
 function App() {
   return (
-    <div className='main-link-list'>
-        <div className='main-link'>
-              <img className='main-link-image' src='/pilt.jpg' />
-              <p>Hello, I am Kaul Kristjan Kikas and this website is made to exercise React</p>
-              <div className='kriips'></div>
-              <div className='tehtudTööd'>
-              <div className='tehtudTöödContainer'>
-              <img className='tehtudTöödPildid' src="/pilt2.jpg" alt="" />
-              <p>Work done related to USER DESIGN</p>
-              </div>
-              <div className='tehtudTöödContainer'>
-              <img className='tehtudTöödPildid' src="/pilt3.jpg" alt="" />
-              <p>Work done related to HOBBIES</p>
-              </div>
-              <div className='tehtudTöödContainer'>
-              <img className='tehtudTöödPildid' src="/pilt4.jpg" alt="" />
-              <p className='tehtudTöödTekst'>Work done related to PHOTOSHOP</p>
-              </div>
-              </div>
-        </div>
-    </div>
-
+      <div>
+        <Routes>
+          <Route path='/' element={ <Avaleht /> } />
+          <Route path='courses' element={ <Courses /> } />
+          <Route path='hobbies' element={ <Hobbies /> } />
+          <Route path='work' element={ <Work /> } />
+        </Routes>
+      </div>
   );
 }
 

@@ -44,33 +44,35 @@
 
 .main-link {
   color: rgb(66,18,18);
-  background-color: beige;
-  width: 700px;
-  height: 500px;
+  background-color: rgba(211, 211, 211, 0.288);
+  width: 800px;
+  height: 100%;
   margin-top: 20px;
   padding: 0px 0px 20px 0px;
-  border-radius: 10px;
+  border-radius: 30px;
   text-align:center;
 }
 
 .main-link-image {
-  width: 250px;
-  height: 160px;
+  width: 80%;
+  height: 150px;
   border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-bottom-left-radius:20px;
 }
 
 .kriips {
   height: 7px;
   width: 60px;
-  background-color: brown;
+  background-color: gray;
   margin: 50px auto;
+  border-radius: 10px;
 
 }
 
 .tehtudTööd {
   display: flex;
   justify-content: space-evenly;
+  
   
 }
 
@@ -84,5 +86,12 @@
   width: 200px;
   font-size: 12px;
   padding-top: 10px;
+  border-radius: 20px;
+  padding-bottom: 10px;
 }
 
+.main-link:hover {
+  transition: .5s;
+  transform: scale(1.1);
+  box-shadow: 0 8px 180px 0px black;
+}
